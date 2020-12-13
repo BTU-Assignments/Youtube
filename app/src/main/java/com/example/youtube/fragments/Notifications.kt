@@ -15,7 +15,10 @@ class Notifications: Fragment(R.layout.fragment_notifications) {
 
         textView = view.findViewById(R.id.textView2)
 
-        textView.text = NotificationFragmentArgs.fromBundle(requireArguments()).amount.toString()
+        textView.text = NotificationsArgs.fromBundle(requireArguments()).amount.toString()
+
+
+
 
 
     }

@@ -23,7 +23,7 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
         button.setOnClickListener{
             val amount =  editText.text.toString().toInt()
 
-            val action = HomeFragmentDirections.actionNavigationHomeToNavigationNotifications()
+            val action = HomeFragmentDirections.actionNavigationHomeToNavigationNotifications(amount)
 
             navController.navigate(action)
 

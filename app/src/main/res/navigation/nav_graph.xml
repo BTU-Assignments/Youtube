@@ -13,10 +13,6 @@
         <action
             android:id="@+id/action_navigation_home_to_navigation_notifications"
             app:destination="@id/navigation_notifications" />
-        <argument
-            android:name="amount"
-            app:argType="integer"
-            android:defaultValue="-1" />
 
     </fragment>
     <fragment android:id="@+id/navigation_dashboard"
@@ -27,7 +23,12 @@
         android:id="@+id/navigation_notifications"
         tools:layout="@layout/fragment_notifications"
         android:name="com.example.youtube.fragments.Notifications"
-        android:label="Notifications" />
+        android:label="Notifications" >
+        <argument
+            android:name="amount"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_library"
         tools:layout="@layout/fragment_library"
